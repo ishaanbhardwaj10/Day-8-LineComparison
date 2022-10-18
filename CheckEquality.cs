@@ -20,7 +20,10 @@ namespace LineComparisonNonStatic
             lineTwoLength = lineTwo.LineLenght();
             Console.WriteLine("Length of Line Two: " + lineTwoLength);
 
-            if (lineOneLength == lineTwoLength)
+            //checking equality using Equals method in C#
+            bool checkEquality = lineOneLength.Equals(lineTwoLength);
+
+            if (checkEquality)
             {
                 Console.WriteLine("Both lines are equal in length.");
             }
